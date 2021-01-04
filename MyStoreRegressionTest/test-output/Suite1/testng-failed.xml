@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="none">
+  <parameter name="password" value="Santosh"/>
+  <parameter name="browser" value="chrome"/>
+  <parameter name="email" value="Santhu2024@gmail.com"/>
+  <test name="MyStore Test Case(failed)" parallel="none">
+    <parameter name="password" value="Santosh"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="email" value="Santhu2024@gmail.com"/>
+    <classes>
+      <class name="com.mystore.tests.LoginTest">
+        <methods>
+          <include name="loginTest" invocation-numbers="0"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- com.mystore.tests.LoginTest -->
+    </classes>
+  </test> <!-- MyStore Test Case(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
